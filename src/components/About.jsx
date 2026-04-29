@@ -1,4 +1,6 @@
 import { useTranslation } from '../hooks/useTranslation'
+import aladdinImage from '../assets/Aladdin.png'
+import profileImage from '../assets/profile-img.webp'
 import './About.css'
 
 function About() {
@@ -8,31 +10,59 @@ function About() {
   const teamMembers = [
     {
       id: 1,
-      name: "Anna Andersson",
-      role: "CEO & Grundare",
-      image: "/team/anna.jpg", // Lägg till bilder i public/team/ mappen
-      bio: "Passionerad resenär med 10+ års erfarenhet inom turismbranschen"
+      name: "Kim Au",
+      role: "CEO & Founder",
+      image: profileImage, // Profile placeholder
+      bio: ""
     },
     {
       id: 2,
-      name: "Erik Johansson", 
-      role: "CTO",
-      image: "/team/erik.jpg",
-      bio: "Tech-expert som utvecklar innovativa lösningar för moderna resenärer"
+      name: "Aladdin Marshaha", 
+      role: "Software Engineer",
+      image: aladdinImage, // Din bild från assets
+      bio: ""
     },
     {
       id: 3,
-      name: "Maria Silva",
-      role: "Head of Operations",
-      image: "/team/maria.jpg",
-      bio: "Operativ chef som säkerställer att varje resa blir oförglömlig"
+      name: "Shwetha Rajesh",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
     },
     {
       id: 4,
-      name: "Johan Berg",
-      role: "Customer Experience Manager",
-      image: "/team/johan.jpg",
-      bio: "Dedikerad till att skapa exceptionella kundupplevelser"
+      name: "Swetha Chandrasekar",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
+    },
+    {
+      id: 5,
+      name: "Kashf U Sahar Panchmahaldar",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
+    },
+    {
+      id: 6,
+      name: "Sirajum Munira",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
+    },
+    {
+      id: 7,
+      name: "Magarita Popkova",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
+    },
+    {
+      id: 8,
+      name: "Tushar Kanjwani",
+      role: "Team Member",
+      image: profileImage, // Profile placeholder
+      bio: ""
     }
   ]
 
@@ -81,14 +111,16 @@ function About() {
             {teamMembers.map((member) => (
               <div key={member.id} className="team-member">
                 <div className="member-image">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    onError={(e) => {
-                      // Fallback till placeholder om bilden inte finns
-                      e.target.src = `https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face&auto=format&q=80`
-                    }}
-                  />
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                    />
+                  ) : (
+                    <div className="image-placeholder">
+                      <span>📷</span>
+                    </div>
+                  )}
                 </div>
                 <div className="member-info">
                   <h4 className="member-name">{member.name}</h4>
