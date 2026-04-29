@@ -158,6 +158,42 @@ export const translations = {
         title: "Business Executive & Frequent Traveler"
       }
     },
+    about: {
+      title: "About Us",
+      intro: "We're passionate travelers on a mission to revolutionize how the world explores. Our team believes that great journeys shouldn't be weighed down by heavy luggage.",
+      story: {
+        title: "Our Story",
+        text1: "Bagless Travel was born from a simple frustration: why do we still drag heavy suitcases around the world when we have the technology to make travel seamless? After missing flights due to baggage issues and paying excessive fees, our founders decided there had to be a better way.",
+        text2: "Today, we partner with hotels worldwide to deliver curated, high-quality clothing directly to your destination. We've helped thousands of travelers experience the freedom of baggage-free journeys, and we're just getting started."
+      },
+      mission: {
+        title: "Our Mission",
+        sustainability: {
+          title: "Sustainable Travel",
+          text: "Reduce environmental impact through clothing reuse and fewer checked bags on flights."
+        },
+        freedom: {
+          title: "Travel Freedom",
+          text: "Enable spontaneous, stress-free travel experiences without the burden of packing and baggage fees."
+        },
+        innovation: {
+          title: "Innovation First",
+          text: "Continuously improve travel through technology, partnerships, and user-centered design."
+        }
+      },
+      team: {
+        title: "Meet Our Team",
+        intro: "We're a diverse group of travel enthusiasts, technologists, and sustainability advocates working together to transform how you experience the world."
+      },
+      cta: {
+        title: "Ready to Travel With Us?",
+        text: "Join thousands of smart travelers who have already discovered the freedom of baggage-free journeys.",
+        buttons: {
+          contact: "Get In Touch",
+          learn: "Learn More"
+        }
+      }
+    },
     footer: {
       brand: {
         tagline: "Travel smart. Travel light. Travel stress-free.",
@@ -372,6 +408,42 @@ export const translations = {
         quote: "Efter min första Bagless-resa kan jag aldrig gå tillbaka. Så enkelt, så stressfritt, så smart!",
         source: "Maria S.",
         title: "Företagsledare & Frekvent Resenär"
+      }
+    },
+    about: {
+      title: "Om Oss",
+      intro: "Vi är passionerade resenärer med en mission att revolutionera hur världen utforskar. Vårt team tror att fantastiska resor inte ska belastas av tungt bagage.",
+      story: {
+        title: "Vår Historia",
+        text1: "Bagless Travel föddes ur en enkel frustration: varför släpar vi fortfarande tunga väskor runt världen när vi har tekniken för att göra resor smidiga? Efter att ha missat flyg på grund av bagageproblem och betalat höga avgifter bestämde våra grundare att det måste finnas ett bättre sätt.",
+        text2: "Idag samarbetar vi med hotell över hela världen för att leverera kurerade, högkvalitativa kläder direkt till din destination. Vi har hjälpt tusentals resenärer att uppleva friheten med bagagefria resor, och vi har bara börjat."
+      },
+      mission: {
+        title: "Vårt Uppdrag",
+        sustainability: {
+          title: "Hållbart Resande",
+          text: "Minska miljöpåverkan genom återanvändning av kläder och färre incheckade väskor på flyg."
+        },
+        freedom: {
+          title: "Resefrihet",
+          text: "Möjliggöra spontana, stressfria reseupplevelser utan bördan av packning och bagageavgifter."
+        },
+        innovation: {
+          title: "Innovation Först",
+          text: "Kontinuerligt förbättra resandet genom teknik, partnerskap och användarcentrerad design."
+        }
+      },
+      team: {
+        title: "Träffa Vårt Team",
+        intro: "Vi är en mångfald grupp av resetsentusiaster, teknologer och hållbarhetsförespråkare som arbetar tillsammans för att förändra hur du upplever världen."
+      },
+      cta: {
+        title: "Redo Att Resa Med Oss?",
+        text: "Gå med i tusentals smarta resenärer som redan upptäckt friheten med bagagefria resor.",
+        buttons: {
+          contact: "Kontakta Oss",
+          learn: "Lär Dig Mer"
+        }
       }
     },
     footer: {
