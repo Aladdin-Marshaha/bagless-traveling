@@ -1,0 +1,60 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4682b4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="planeBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ffffff" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1920" height="1080" fill="url(#skyBg)"/>
+  
+  <!-- Airport terminal silhouette -->
+  <rect x="0" y="800" width="1920" height="280" fill="#2c3e50" opacity="0.2"/>
+  <rect x="200" y="700" width="400" height="180" fill="#34495e" opacity="0.3"/>
+  <rect x="1200" y="650" width="500" height="230" fill="#34495e" opacity="0.3"/>
+  
+  <!-- Airplane silhouette -->
+  <g transform="translate(300, 200)" opacity="0.4" filter="url(#glow)">
+    <!-- Main fuselage -->
+    <ellipse cx="100" cy="30" rx="80" ry="8" fill="url(#planeBg)"/>
+    <!-- Wings -->
+    <ellipse cx="60" cy="30" rx="25" ry="40" fill="url(#planeBg)" opacity="0.9"/>
+    <!-- Tail -->
+    <path d="M 20 30 Q 10 15 25 20 L 35 30 Q 25 45 10 40 Q 20 30 20 30" fill="url(#planeBg)"/>
+    <!-- Wing detail -->
+    <ellipse cx="60" cy="30" rx="15" ry="25" fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <!-- Another airplane -->
+  <g transform="translate(1200, 150)" opacity="0.3" filter="url(#glow)">
+    <ellipse cx="80" cy="25" rx="60" ry="6" fill="url(#planeBg)"/>
+    <ellipse cx="50" cy="25" rx="20" ry="30" fill="url(#planeBg)" opacity="0.9"/>
+    <path d="M 20 25 Q 12 12 22 16 L 30 25 Q 22 38 12 34 Q 20 25 20 25" fill="url(#planeBg)"/>
+  </g>
+  
+  <!-- Clouds -->
+  <g opacity="0.6">
+    <ellipse cx="500" cy="100" rx="120" ry="40" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="480" cy="90" rx="90" ry="30" fill="#ffffff" opacity="0.6"/>
+    <ellipse cx="520" cy="110" rx="80" ry="25" fill="#ffffff" opacity="0.8"/>
+    
+    <ellipse cx="1400" cy="180" rx="140" ry="50" fill="#ffffff" opacity="0.6"/>
+    <ellipse cx="1370" cy="170" rx="110" ry="35" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="1430" cy="190" rx="90" ry="30" fill="#ffffff" opacity="0.5"/>
+  </g>
+  
+  <!-- Light rays -->
+  <g opacity="0.1">
+    <path d="M 0 0 L 600 800 L 700 780 L 100 -20 Z" fill="#ffffff"/>
+    <path d="M 1920 0 L 1320 600 L 1220 580 L 1820 -20 Z" fill="#ffffff"/>
+  </g>
+</svg>

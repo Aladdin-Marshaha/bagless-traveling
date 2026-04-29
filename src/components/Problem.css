@@ -1,0 +1,421 @@
+.problem {
+  padding: 100px 0;
+  background: 
+    linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.5) 0%, 
+      rgba(248, 250, 255, 0.5) 100%),
+    url('https://resorglobal.se/wp-content/uploads/2026/04/RG-Guide-Hur-du-packar-for-en-tvaveckorsresa-feat-1024x576.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.problem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.problem-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.problem-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.problem-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  color: #dc2626;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.section-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  display: block;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+  background: linear-gradient(135deg, #dc2626, #ea580c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #1e40af;
+  max-width: 650px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+  padding: 1.5rem 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  display: block;
+  line-height: 1.6;
+  font-weight: 400;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.problems-grid.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.problem-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.problem-card:hover::before {
+  transform: translateX(100%);
+}
+
+.cost-card {
+  --accent-color: #f59e0b;
+}
+
+.environment-card {
+  --accent-color: #10b981;
+}
+
+.satisfaction-card {
+  --accent-color: #ef4444;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.problem-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.cost-icon {
+  background: linear-gradient(135deg, #fef3c7, #fde047);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
+}
+
+.environment-icon {
+  background: linear-gradient(135deg, #d1fae5, #34d399);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.2);
+}
+
+.satisfaction-icon {
+  background: linear-gradient(135deg, #fee2e2, #f87171);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+}
+
+.problem-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.problem-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-color);
+}
+
+.stat-unit {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.problem-card p {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.problem-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.detail-icon {
+  font-size: 1rem;
+}
+
+.market-insights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.market-insights.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+}
+
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.insight-header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.insight-trend {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.insight-card p {
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .problem {
+    padding: 60px 0;
+  }
+  
+  .problem-container {
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .problems-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .problem-card {
+    padding: 2rem 1.5rem;
+    margin: 0 10px;
+  }
+  
+  .problem-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+  }
+  
+  .market-insights {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .insight-card {
+    padding: 1.25rem;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .problem-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .problem {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+[data-theme="dark"] .section-title {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .section-subtitle {
+  color: #94a3b8;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.9) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    0 1px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(148, 163, 184, 0.1);
+}
+
+[data-theme="dark"] .problem-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .problem-card:hover {
+  background: rgba(30, 41, 59, 0.8);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .problem-card h3 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .stat-unit {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .problem-card p {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .detail {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .insight-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+[data-theme="dark"] .insight-card:hover {
+  background: rgba(30, 41, 59, 0.8);
+}
+
+[data-theme="dark"] .insight-header h4 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .insight-trend {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(37, 99, 235, 0.6));
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .insight-card p {
+  color: #cbd5e1;
+}
