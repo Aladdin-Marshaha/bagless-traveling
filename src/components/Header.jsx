@@ -17,7 +17,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <a href="/" className="logo-link">
+          <a href="/bagless-traveling/" className="logo-link">
             <img src={logo} alt="Bagless Traveling" className="logo-img" />
           </a>
         </div>

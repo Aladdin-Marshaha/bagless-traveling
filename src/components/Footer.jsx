@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-main">
           <div className="footer-brand">
-            <a href="/" className="footer-logo-link">
+            <a href="/bagless-traveling/" className="footer-logo-link">
               <img src={logo} alt="Bagless Travel" className="footer-logo" />
             </a>
             <p>{t('footer.brand.tagline')}</p>

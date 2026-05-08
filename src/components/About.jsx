@@ -1,5 +1,11 @@
 import { useTranslation } from '../hooks/useTranslation'
 import aladdinImage from '../assets/Aladdin.png'
+import kimImage from '../assets/Kim.png'
+import shwethaImage from '../assets/Shwetha Rajesh - App Developer.png'
+import swethaImage from '../assets/Swetha Chandrasekar- App Developer.png'
+import kashfImage from '../assets/Kashf Panchmahaldar - App developer.png'
+import sirajumImage from '../assets/SirajumMunira-Sofrware-development.png'
+import tusharImage from '../assets/Engr. Tushar Kanjwani - AI Engineer.png'
 import profileImage from '../assets/profile-img.webp'
 import './About.css'
 
@@ -12,7 +18,7 @@ function About() {
       id: 1,
       name: "Kim Au",
       role: "CEO & Founder",
-      image: profileImage, // Profile placeholder
+      image: kimImage,
       bio: ""
     },
     {
@@ -25,29 +31,29 @@ function About() {
     {
       id: 3,
       name: "Shwetha Rajesh",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "App Developer",
+      image: shwethaImage,
       bio: ""
     },
     {
       id: 4,
       name: "Swetha Chandrasekar",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "App Developer",
+      image: swethaImage,
       bio: ""
     },
     {
       id: 5,
       name: "Kashf U Sahar Panchmahaldar",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "App Developer",
+      image: kashfImage,
       bio: ""
     },
     {
       id: 6,
       name: "Sirajum Munira",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "Software Developer",
+      image: sirajumImage,
       bio: ""
     },
     {
@@ -60,8 +66,8 @@ function About() {
     {
       id: 8,
       name: "Tushar Kanjwani",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "AI Engineer",
+      image: tusharImage,
       bio: ""
     }
   ]
