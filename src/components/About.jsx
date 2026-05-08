@@ -44,7 +44,7 @@ function About() {
     },
     {
       id: 5,
-      name: "Kashf U Sahar Panchmahaldar",
+      name: "Kashf Panchmahaldar",
       role: "App Developer",
       image: kashfImage,
       bio: ""
