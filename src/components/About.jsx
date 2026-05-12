@@ -6,6 +6,7 @@ import swethaImage from '../assets/Swetha Chandrasekar- App Developer.png'
 import kashfImage from '../assets/Kashf Panchmahaldar - App developer.png'
 import sirajumImage from '../assets/SirajumMunira-Sofrware-development.png'
 import tusharImage from '../assets/Engr. Tushar Kanjwani - AI Engineer.png'
+import magaritaImage from '../assets/Magarita-Popkova-App developer.png'
 import profileImage from '../assets/profile-img.webp'
 import './About.css'
 
@@ -59,8 +60,8 @@ function About() {
     {
       id: 7,
       name: "Magarita Popkova",
-      role: "Team Member",
-      image: profileImage, // Profile placeholder
+      role: "App Developer",
+      image: magaritaImage,
       bio: ""
     },
     {
